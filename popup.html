@@ -1,46 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="utf-8">
     <style>
       body {
         width: 300px;
         text-align: center;
-        padding: 30px;
+        padding: 40px;
+        overflow-y: auto;
+        max-height: 200px;
       }
-
       button {
-        border-radius: 4px;
-        background-color: #4b8f29;
-        display: inline-block;
+        align-items: center;
+        background: transparent;
+        background: url('https://i.pinimg.com/originals/94/ff/74/94ff7463a1574221ba6d4ada2c997e0b.gif');
+        background-position: 53% 70%;
+        background-size: 60%;
+        border-radius: 35px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         cursor: pointer;
-        color: #fff;
-        font-size: 13px;
-        padding: 6px 0;
-        width: 265px;
-        text-decoration: none;
+        display: flex;
+        height: 70px;
+        position: relative;
+        width: 290px;
+        justify-content: center;
+        color: #ffffff;
       }
-
       button.active {
-        background-color: #eb675e;
+        align-items: center;
+        background: var(--light-2);
+        background: url('https://i.ibb.co/ZWmbGbj/etmfdr.gif');
+        background-position: 57% 94%;
+        background-size: 60%;
+        border-radius: 35px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        cursor: pointer;
+        display: flex;
+        height: 70px;
+        position: relative;
+        width: 290px;
+        justify-content: center;
+        color: #ffffff;
       }
-
       button:focus {
         outline: none;
         border: none;
       }
-
       p {
-        color: #ccc;
-        font-size: 13px;
-        margin-bottom: 0px;
+        color: #5a5858;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'Noto Sans', sans-serif;
+        margin-top: 8% !important;
       }
     </style>
   </head>
   <body>
-    <button id="toggle-auto-reload">Start auto reloading current tab</button>
-
-    <p>Clicking away from here will stop the auto reload</p>
-
+    <button id="toggle-auto-reload">Iniciar la recarga automática</button>
+    <p class="p">Haga clic fuera de esta ventana si desea detener la recarga automática.</p>
     <script src="popup.js"></script>
   </body>
 </html>

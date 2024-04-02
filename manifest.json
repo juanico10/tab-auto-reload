@@ -1,23 +1,26 @@
 {
-  "manifest_version": 2,
-  "name": "Chrome Tab Auto Reloader",
-  "description": "Auto reload a tab every 30 seconds to keep your session alive while you are AFK",
-  "version": "0.1",
-  "homepage_url": "http://alexcrooks.me",
+  "manifest_version": 3,
+  "name": "Tab Auto Reloader",
+  "description": "Auto reload a tab every 30 seconds to keep your session alive",
+  "version": "0.2",
+  "homepage_url": "https://github.com/juanico10/tab-auto-reload",
   "permissions": ["tabs"],
-  "browser_action": {
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon16.png",
-      "32": "icon32.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
   },
   "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }

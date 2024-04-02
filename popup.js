@@ -25,11 +25,11 @@ const autoReloadTab = () => {
 }
 
 setInterval(() => {
-  let buttonHtml = 'Start auto reloading current tab'
+  let buttonHtml = 'Iniciar la recarga automática'
 
   if (lastReloaded) {
     const timeDifference = Math.floor((new Date() - lastReloaded) / 1000)
-    buttonHtml = `(${autoReloadTimeoutSeconds - timeDifference}) Stop auto reloading current tab`
+    buttonHtml = `(${autoReloadTimeoutSeconds - timeDifference}) Detener la recarga automática`
   }
 
   $toggleAutoReload.innerHTML = buttonHtml
